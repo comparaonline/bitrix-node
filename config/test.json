@@ -1,0 +1,8 @@
+{
+  "bitrix": {
+    "domain": "comparaonlinedev",
+    "clientId": "MOCK_BITRIX_CLIENT_ID",
+    "clientSecret": "MOCK_BITRIX_CLIENT_SECRET",
+    "refreshToken": "MOCK_BITRIX_CLIENT_SECRET"
+  }
+}
