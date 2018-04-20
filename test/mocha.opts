@@ -1,0 +1,4 @@
+--require ts-node/register
+--watch-extensions ts,tsx
+--timeout 6000
+src/**/__tests__/*.{ts,tsx}

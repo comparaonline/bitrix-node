@@ -1,0 +1,44 @@
+{
+  "name": "bitrix-node",
+  "version": "0.0.1",
+  "description": "Node API connector for Bitrix24 CRM",
+  "main": "index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "NODE_CONFIG_ENV=test mocha",
+    "pretest": "yarn tslint && NODE_CONFIG_ENV=test",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "compile": "tsc --outDir ./build",
+    "clean": "rm -rf build/*"
+  },
+  "keywords": [
+    "bitrix",
+    "bitrix24"
+  ],
+  "author": {
+    "name": "Lisandro Pavetti",
+    "email": "lpavetti@comparaonline.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/config": "^0.0.33",
+    "@types/jsonfile": "^4.0.1",
+    "@types/mocha": "^5.2.0",
+    "@types/node-persist": "^0.0.33",
+    "chai": "^4.1.2",
+    "config": "^1.28.1",
+    "mocha": "^5.1.1",
+    "nock-utils": "^0.1.1",
+    "querystring": "^0.2.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-airbnb": "^5.3.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "node-persist": "^2.1.0",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
