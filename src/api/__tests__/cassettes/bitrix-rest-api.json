@@ -1,0 +1,283 @@
+[
+  {
+    "scope": "https://comparaonlinedev.bitrix24.com:443",
+    "method": "GET",
+    "path": "/rest/crm.contact.list?parameters_method&auth=undefined&select[0]=ID",
+    "body": "",
+    "status": 401,
+    "response": {
+      "error": "invalid_token",
+      "error_description": "Unable to get application by token"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.8.1",
+      "Date",
+      "Mon, 23 Apr 2018 17:36:40 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "P3P",
+      "policyref=\"/bitrix/p3p.xml\", CP=\"NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA\"",
+      "X-Powered-CMS",
+      "Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)",
+      "Set-Cookie",
+      "PHPSESSID=l164fZbIyRtwP200NZdnSsFK4oH1MnKV; path=/; secure; HttpOnly",
+      "Expires",
+      "Thu, 19 Nov 1981 08:52:00 GMT",
+      "Cache-Control",
+      "no-store, no-cache, must-revalidate",
+      "Pragma",
+      "no-cache",
+      "Set-Cookie",
+      "qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Access-Control-Allow-Headers",
+      "origin, content-type, accept",
+      "X-Content-Type-Options",
+      "nosniff"
+    ]
+  },
+  {
+    "scope": "https://comparaonlinedev.bitrix24.com:443",
+    "method": "GET",
+    "path": "/oauth/token/?grant_type=refresh_token&client_id=MOCK_CLIENT_ID&client_secret=MOCK_CLIENT_SECRET&refresh_token=MOCK_REFRESH_TOKEN",
+    "body": "",
+    "status": 200,
+    "response": {
+      "access_token": "MOCK_ACCESS_TOKEN_2",
+      "expires": 1524508601,
+      "expires_in": 3600,
+      "scope": "app",
+      "domain": "comparaonlinedev.bitrix24.com",
+      "server_endpoint": "https://oauth.bitrix.info/rest/",
+      "status": "L",
+      "client_endpoint": "https://comparaonlinedev.bitrix24.com/rest/",
+      "member_id": "5e5bbec249b36e418245d9d5673b72f2",
+      "user_id": 4,
+      "refresh_token": "MOCK_REFRESH_TOKEN_2"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.8.1",
+      "Date",
+      "Mon, 23 Apr 2018 17:36:41 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "P3P",
+      "policyref=\"/bitrix/p3p.xml\", CP=\"NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA\"",
+      "X-Powered-CMS",
+      "Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)",
+      "Set-Cookie",
+      "PHPSESSID=Yx7IWJ9OtnhjMNUelZTsvpa1Fae3ThJq; path=/; secure; HttpOnly",
+      "Expires",
+      "Thu, 19 Nov 1981 08:52:00 GMT",
+      "Cache-Control",
+      "no-store, no-cache, must-revalidate",
+      "Pragma",
+      "no-cache",
+      "Set-Cookie",
+      "qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  },
+  {
+    "scope": "https://comparaonlinedev.bitrix24.com:443",
+    "method": "GET",
+    "path": "/rest/crm.contact.list?parameters_method&auth=MOCK_ACCESS_TOKEN_2&select[0]=ID",
+    "body": "",
+    "status": 200,
+    "response": {
+      "result": [
+        {
+          "ID": "10"
+        },
+        {
+          "ID": "12"
+        },
+        {
+          "ID": "14"
+        },
+        {
+          "ID": "16"
+        },
+        {
+          "ID": "18"
+        },
+        {
+          "ID": "20"
+        },
+        {
+          "ID": "22"
+        },
+        {
+          "ID": "24"
+        },
+        {
+          "ID": "26"
+        },
+        {
+          "ID": "28"
+        },
+        {
+          "ID": "30"
+        },
+        {
+          "ID": "32"
+        },
+        {
+          "ID": "34"
+        },
+        {
+          "ID": "36"
+        },
+        {
+          "ID": "38"
+        },
+        {
+          "ID": "40"
+        },
+        {
+          "ID": "42"
+        },
+        {
+          "ID": "44"
+        },
+        {
+          "ID": "46"
+        },
+        {
+          "ID": "48"
+        },
+        {
+          "ID": "50"
+        },
+        {
+          "ID": "52"
+        },
+        {
+          "ID": "54"
+        },
+        {
+          "ID": "56"
+        },
+        {
+          "ID": "58"
+        },
+        {
+          "ID": "60"
+        },
+        {
+          "ID": "62"
+        },
+        {
+          "ID": "64"
+        },
+        {
+          "ID": "66"
+        },
+        {
+          "ID": "68"
+        },
+        {
+          "ID": "70"
+        },
+        {
+          "ID": "72"
+        },
+        {
+          "ID": "74"
+        },
+        {
+          "ID": "76"
+        },
+        {
+          "ID": "78"
+        },
+        {
+          "ID": "80"
+        },
+        {
+          "ID": "82"
+        },
+        {
+          "ID": "84"
+        },
+        {
+          "ID": "86"
+        },
+        {
+          "ID": "88"
+        }
+      ],
+      "total": 40,
+      "time": {
+        "start": 1524505001.9933,
+        "finish": 1524505002.7762,
+        "duration": 0.78293013572693,
+        "processing": 0.004533052444458,
+        "date_start": "2018-04-23T20:36:41+03:00",
+        "date_finish": "2018-04-23T20:36:42+03:00"
+      }
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.8.1",
+      "Date",
+      "Mon, 23 Apr 2018 17:36:42 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "P3P",
+      "policyref=\"/bitrix/p3p.xml\", CP=\"NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA\"",
+      "X-Powered-CMS",
+      "Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)",
+      "Set-Cookie",
+      "PHPSESSID=OC2UPhrZMwJ5yvGyjpDVP3pxWREHa41V; path=/; secure; HttpOnly",
+      "Expires",
+      "Thu, 19 Nov 1981 08:52:00 GMT",
+      "Cache-Control",
+      "no-store, no-cache, must-revalidate",
+      "Pragma",
+      "no-cache",
+      "Set-Cookie",
+      "qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Access-Control-Allow-Headers",
+      "origin, content-type, accept",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Set-Cookie",
+      "BITRIX_SM_SALE_UID=0; expires=Thu, 18-Apr-2019 17:36:42 GMT; Max-Age=31104000; path=/",
+      "Set-Cookie",
+      "BITRIX_SM_CC=Y; expires=Thu, 18-Apr-2019 17:36:42 GMT; Max-Age=31104000; path=/",
+      "Set-Cookie",
+      "BITRIX_SM_NCC=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+      "Set-Cookie",
+      "BITRIX_SM_PK=%2F4%2Fa3a928c93703f00a6eb16a05f9f5a574; path=/; HttpOnly",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains"
+    ]
+  }
+]
