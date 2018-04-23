@@ -6,6 +6,7 @@ import BitrixRestApi from '../../api/BitrixRestApi';
 
 const bitrixRestApi = BitrixRestApi.getInstance();
 const bitrixContact = new BitrixContact(bitrixRestApi);
+const FILTER_ID = { select: ['ID'] };
 
 describe('BitrixContact', () => {
   const CASSETTE_PATH = `${__dirname}/cassettes/bitrix-contacts.json`;
@@ -15,7 +16,7 @@ describe('BitrixContact', () => {
   after(() => recorder.stop());
 
   it('should return all the contacts', async () => {
-    const contacts = await bitrixContact.allContacts({});
+    const contacts = await bitrixContact.allContacts(FILTER_ID);
     expect(contacts).to.not.be.null;
   });
 
@@ -25,7 +26,7 @@ describe('BitrixContact', () => {
   });
 
   it('should return a contact that exists in Bitrix', async () => {
-    const contacts = await bitrixContact.allContacts({ select: ['ID'] });
+    const contacts = await bitrixContact.allContacts(FILTER_ID);
     const userId = contacts.result[0].ID;
 
     const newContact = await bitrixContact.findContact({ id: userId });
@@ -33,7 +34,7 @@ describe('BitrixContact', () => {
   });
 
   it('should update a contact in bitrix', async () => {
-    const contacts = await bitrixContact.allContacts({ select: ['ID'] });
+    const contacts = await bitrixContact.allContacts(FILTER_ID);
     const userId = contacts.result[0].ID;
 
     const contactParams = { ...NEW_CONTACT, ...{ id: userId } };

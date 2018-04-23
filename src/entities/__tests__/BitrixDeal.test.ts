@@ -6,6 +6,7 @@ import BitrixRestApi from '../../api/BitrixRestApi';
 
 const bitrixRestApi = BitrixRestApi.getInstance();
 const deal = new BitrixDeal(bitrixRestApi);
+const FILTER_ID = { select: ['ID'] };
 
 describe('BitrixDeal', () =>  {
   const CASSETTE_PATH = `${__dirname}/cassettes/bitrix-deals.json`;
@@ -15,7 +16,7 @@ describe('BitrixDeal', () =>  {
   after(() => recorder.stop());
 
   it('should return all the deals in Bitrix', async () => {
-    const result = await deal.allDeals({});
+    const result = await deal.allDeals(FILTER_ID);
     expect(result).not.to.be.null;
   });
 
@@ -25,7 +26,7 @@ describe('BitrixDeal', () =>  {
   });
 
   it('should return a deal based in its id', async () => {
-    const deals = await deal.allDeals({});
+    const deals = await deal.allDeals(FILTER_ID);
     const TITAN_DEAL_ID = deals.result[0].ID;
 
     const response = await deal.findDeal(TITAN_DEAL_ID);
@@ -33,7 +34,7 @@ describe('BitrixDeal', () =>  {
   });
 
   it('should update a bitrix deal', async () => {
-    const deals = await deal.allDeals({});
+    const deals = await deal.allDeals(FILTER_ID);
     const TITAN_DEAL_ID = deals.result[0].ID;
     const UPDATE_DEAL = { fields: { OPPORTUNITY: 6000 } };
     const dealParams = { ...UPDATE_DEAL, ...{ id: TITAN_DEAL_ID } };
