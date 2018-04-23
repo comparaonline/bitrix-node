@@ -16,12 +16,12 @@ describe('BitrixRestApi', () => {
 
   const cache = new AuthCache();
 
-  before(async () => {
-    await recorder.start();
+  before(() => {
+    cache.clear();
+    recorder.start();
   });
-  after(async () => {
-    new AuthCache().clear();
-    await recorder.stop();
+  after(() => {
+    recorder.stop();
   });
 
   it('should refresh a missing token', async () => {
