@@ -29,12 +29,12 @@
     "chai": "^4.1.2",
     "config": "^1.28.1",
     "mocha": "^5.1.1",
-    "nock-utils": "^0.1.1",
     "querystring": "^0.2.0",
     "ts-node": "^3.3.0",
     "tslint": "^5.8.0",
     "tslint-config-airbnb": "^5.3.0",
-    "typescript": "^2.8.3"
+    "typescript": "^2.8.3",
+    "nock-utils": "^0.1.5"
   },
   "dependencies": {
     "node-persist": "^2.1.0",
