@@ -20,9 +20,8 @@ describe('BitrixRestApi', () => {
     cache.clear();
     recorder.start();
   });
-  after(() => {
-    recorder.stop();
-  });
+
+  after(() => recorder.stop());
 
   it('should refresh a missing token', async () => {
 
