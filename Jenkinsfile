@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Prepare') {
           steps {
-            sh 'npm install'
+            sh 'npm install -g yarn  ||\
+                yarn install'
           }
         }
         stage('Build') {
@@ -21,7 +22,7 @@ pipeline {
 
     post {
       always {
-        echo 'Finished testing project.'
+        echo 'Done building and testing.'
       }
     }
 }
